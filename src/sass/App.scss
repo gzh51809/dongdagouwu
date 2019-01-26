@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+      .top{
+        width: 375px;
+        height: 93px;
+          .top1{
+            width: 100%;
+            height: 45px  ;
+            background-color: #f12e24;
+            padding: 9px;
+            position: relative;
+            font-size: 12px;
+              .left{
+                width: 24px;
+                height: 35px;
+                background: #000;
+                color:#fff;
+              }  
+          }
+          .top2{
+            height: 39px;
+            background: #25bc58;
+            margin: 0 auto;
+            padding: 0 8px;
+            //background-color: rgba(255, 255, 255, 0.9);
+          }
+      }
+}
+
