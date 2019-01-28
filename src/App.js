@@ -10,17 +10,26 @@ class App extends Component {
           <div className="top">
               <div className="top1">
                 <div className="left">
-                  {/* <img src={'./img/fenlei.png'} alt="" />   */}
+                  
                   <a href="JavaScript:;" className="fa fa-angle-left">分类</a>
                 </div>
                 <span>
                     <img src={''} alt="" />
                 </span>
                 <div classNam="right">
-                    <input></input>
+                   
                 </div>
               </div>
-              <div className="top2"></div>
+              <div className="top2">
+                <a href="JavaScript:;">首页</a>
+                <a href="JavaScript:;">TV购物</a>
+                <a href="JavaScript:;">团购</a>
+                <a href="JavaScript:;">全球购</a>
+                <a href="JavaScript:;">商城</a>
+                <a href="JavaScript:;">企业官网</a> 
+              
+              </div>
+             
           </div>
       </div>
     );
