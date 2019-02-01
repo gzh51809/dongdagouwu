@@ -1,6 +1,10 @@
 # 东方购物
 
+<<<<<<< HEAD
 > 东方购物app，基于react + antd-ui  + js 
+=======
+> 东方购物app，基于react  + antd-ui  + js 
+>>>>>>> 4405a26823d378a2679963e88fc9536f74af7183
 
 ### 项目工具
 
@@ -9,7 +13,7 @@
 | 开发环境       | nodejs             |
 | UI框架         | antd、iconfont     |
 | JavaScript框架 | React.js           |
-| 开发工具       | VSCode、HBuilder X |
+| 开发工具       | VSCode             |
 | 前端构建工具   | webpack            |
 | 包管理工具     | npm                |
 | 打包app工具    | DCloud             |
