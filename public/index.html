@@ -1,31 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-  <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
-  <script>
-    if ('addEventListener' in document) {
-      document.addEventListener('DOMContentLoaded', function () {
-        FastClick.attach(document.body);
-      }, false);
-    }
-    if (!window.Promise) {
-      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' +
-        '>' + '<' + '/' + 'script>');
-    }
-  </script>
-  <meta name="theme-color" content="#000000" />
-  <!--
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="rgb(255, 45, 81)" />
+    <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -34,16 +19,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>东方购物</title>
-</head>
-
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <script type="text/javascript">
-    document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + "px"
-  </script>
-  <div id="root"></div>
-  <!--
+    <title>东方购物</title>
+    <script src="%PUBLIC_URL%/fastclick.js"></script>
+    <link rel="stylesheet" href="%PUBLIC_URL%/iconfont/iconfont.css">
+    <script type="text/javascript">
+      
+      // 引入 FastClick 并且设置 html meta (更多参考 #576)
+      // 引入 Promise 的 fallback 支持 (部分安卓手机不支持 Promise)
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -53,6 +48,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-</body>
-
+  </body>
 </html>
