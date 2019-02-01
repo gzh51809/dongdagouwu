@@ -1,10 +1,5 @@
 # 东方购物
-
-<<<<<<< HEAD
 > 东方购物app，基于react + antd-ui  + js 
-=======
-> 东方购物app，基于react  + antd-ui  + js 
->>>>>>> 4405a26823d378a2679963e88fc9536f74af7183
 
 ### 项目工具
 
@@ -20,7 +15,6 @@
 
 ### 目录
 
-```
 \根目录
 ├── README.md					项目说明文档
 ├── package.json				Node.js模块描述文件
