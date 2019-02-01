@@ -1,6 +1,6 @@
-# 找家纺
+# 东方购物
 
-> 找家纺app，基于Vue + MySQL + Mint-ui + Cube-ui + js 
+> 东方购物app，基于react + antd-ui  + js 
 
 ### 项目工具
 
