@@ -3,7 +3,7 @@ import {Route,Switch,Redirect} from 'react-router-dom';
 import '@/sass/home.scss';
 
 import BottomBar from '@com/BottomBar';
-import HomeHeader from './HomeHeader';
+import HomeHeader from '@com/HomeHeader';
 import HomeFind from './HomeFind';
 import HomeFocus from './HomeFocus';
 
@@ -18,6 +18,9 @@ class Home extends Component{
         return (
             <div className="page home">
                 <HomeHeader/>
+                <footer>
+                    <BottomBar/>
+                </footer>
                 <div className="main">
                         {/* <Route path={this.props.match.url + '/find'} children={props => {
                             return <HomeFind {...props} />
@@ -34,9 +37,7 @@ class Home extends Component{
                         <Redirect from={this.props.match.url} to={this.props.match.url + '/find'} exact/>
                     </Switch>
                 </div>
-                <footer>
-                    <BottomBar/>
-                </footer>
+                
             </div>
             
         )

@@ -43,15 +43,15 @@ class HomeFind extends Component{
         let {mainDatas,likeDatas} = this.props;
         return (
             <div className="home-find">
-                <div className="search">
+                {/* <div className="search">
                     <a href="javascript:;">
                         <i className="iconfont icon-iconset0157"></i>
                         搜索商品或商家
                     </a>
-                </div>
+                </div> */}
                 <HomeBanner banners={mainDatas.banners} isok={this.state.isok}/>
                 <HomeNav/>
-                <HomeArticle articles={mainDatas.articles} isok={this.state.isok}/>
+                {/* <HomeArticle articles={mainDatas.articles} isok={this.state.isok}/> */}
             </div>
         )
     }

@@ -4,6 +4,8 @@
         width:100%;
         display:flex;
         justify-content:space-between;
+        background-color: #ff2d51;
+        
         &>div{
             flex:1;
             padding:10px 13px;
@@ -17,13 +19,13 @@
                 display:inline-block;
                 font-size:12px;
                 line-height: 20px;
-                color:#919191;
+                color: #fff;
                 &:first-child{
                     margin-right:10px;
                 }
                 &>i{
                     font-size:20px;
-                    color:#525453;
+                    color: #fff;
                 }
             }
             .active{

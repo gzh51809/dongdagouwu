@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink,withRouter} from 'react-router-dom';
+import '@/sass/HomeHeader.scss';
 
 let HomeHeader = props=>{
     return (
@@ -8,8 +9,12 @@ let HomeHeader = props=>{
                 <a href="javascript:;"><i className="iconfont icon-erweima"></i>分类</a>
             </div>
             <div>
-                <NavLink to={props.match.path + "/find"} activeClassName="active">发现</NavLink>
-                <NavLink to={props.match.path + "/focus"} activeClassName="active">关注</NavLink>
+            <div className="search">
+                    <a href="javascript:;">
+                        <i className="iconfont icon-iconset0157"></i>
+                        搜索商品或商家
+                    </a>
+            </div> 
             </div>
             <div>
                 <a href="javascript:;"><i className="iconfont icon-paizhao"></i></a><a href="javascript:;"><i className="iconfont icon-dianhua"></i></a>

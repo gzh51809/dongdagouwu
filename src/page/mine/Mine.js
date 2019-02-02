@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import BottomBar from '@com/BottomBar';
+import HomeHeader from '@com/HomeHeader';
 
 
 class Mine extends Component{
@@ -7,11 +8,14 @@ class Mine extends Component{
         return (
             <div className="page mine">
                 <div className="main">
-                    <h1>Mine</h1>
-                </div>
-                <footer>
+                   
+                    <HomeHeader/>
+                    <footer>
                     <BottomBar/>
                 </footer>
+                <h1>商城</h1>
+                </div>
+                
             </div>
             
         )

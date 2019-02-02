@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import BottomBar from '@com/BottomBar';
+import HomeHeader from '@com/HomeHeader';
 
 
 class Finder extends Component{
@@ -7,11 +8,14 @@ class Finder extends Component{
         return (
             <div className="page finder">
                 <div className="main">
-                    <h1>Finder</h1>
-                </div>
-                <footer>
+                   
+                    <HomeHeader/>
+                    <footer>
                     <BottomBar/>
                 </footer>
+                <h1>团购</h1>
+                </div>
+                
             </div>
             
         )

@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import BottomBar from '@com/BottomBar';
+import HomeHeader from '@com/HomeHeader';
+
 
 
 class Factory extends Component{
@@ -7,11 +9,14 @@ class Factory extends Component{
         return (
             <div className="page factory">
                 <div className="main">
-                    <h1>Factory</h1>
-                </div>
-                <footer>
+                    
+                    <HomeHeader/>
+                    <footer>
                     <BottomBar/>
-                </footer>
+                    </footer>
+                    <h1>TV购</h1>
+                </div>
+               
             </div>
             
         )

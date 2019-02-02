@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import BottomBar from '@com/BottomBar';
+import HomeHeader from '@com/HomeHeader';
 
 
 class Cart extends Component{
@@ -7,11 +8,14 @@ class Cart extends Component{
         return (
             <div className="page cart">
                 <div className="main">
-                    <h1>Cart</h1>
-                </div>
-                <footer>
+                    
+                    <HomeHeader/>
+                    <footer>
                     <BottomBar/>
                 </footer>
+                <h1>全球购</h1>
+                </div>
+                
             </div>
             
         )
