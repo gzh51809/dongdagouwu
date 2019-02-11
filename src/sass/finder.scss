@@ -1,0 +1,41 @@
+.main{
+    background: #DEDEDE;
+    .shidalan{
+        background: #ffffff;
+        height: 130px;
+        margin-top: 8px;
+        overflow: hidden;
+            ul{
+                display: flex;
+                li{
+                    float: left;
+                    img{
+                        width: 93px;
+                        height: 129px;
+                    }
+                }
+            }
+    }
+    .xintuan{
+      display: flex;
+      width: 100px;  
+      height: 122px;
+      margin-top: 8px;
+      ul{
+        display: flex;
+        li{
+           
+            img{
+                width: 93px;
+                height: 129px;
+            }
+        }
+    }
+    }
+    .quanbu{
+        padding-left: 10px;
+        color: #707070;
+        font-size: 18px;
+        line-height: 40px;
+    }
+}

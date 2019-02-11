@@ -18,7 +18,7 @@ class HomeFind extends Component{
         let {mainDatas,likeDatas,inithome} = this.props;
         axios({
             method:'get',
-            url:`http://api.zhaojiafang.com/v1/index/default`,
+            url:`http://m.ocj.com.cn/mt/commonCornersData?shop_num=7781&corner_nums%5B%5D=9541&corner_nums%5B%5D=11221&corner_nums%5B%5D=9544&corner_nums%5B%5D=9545&corner_nums%5B%5D=9681&corner_nums%5B%5D=11161&corner_nums%5B%5D=12081&auth_key=&prev_yn=N&prev_std_dt=&seq_shop_num=&prev_seq_temp_num=`,
             params:{
                 AppVersion: '3.11',
                 Format: 'json',
@@ -30,16 +30,18 @@ class HomeFind extends Component{
                 Sign: 'a143696c955b2722551236ed3190e8d1'
             }
         }).then(res=>{
-            let data = res.data.datas;
+            let data = res.data;
+            //console.log(data)
             inithome(data);
             this.setState({
                 isok:true
             })
         }).catch((err)=>{
-            console.log(err);
+            //console.log(err);
         });
     }
     render(){
+        //console.log(this.props);
         let {mainDatas,likeDatas} = this.props;
         return (
             <div className="home-find">
@@ -49,8 +51,8 @@ class HomeFind extends Component{
                         搜索商品或商家
                     </a>
                 </div> */}
-                <HomeBanner banners={mainDatas.banners} isok={this.state.isok}/>
-                <HomeNav/>
+                {/* <HomeBanner banners={mainDatas.contentList} isok={this.state.isok}/>
+                <HomeNav/> */}
                 {/* <HomeArticle articles={mainDatas.articles} isok={this.state.isok}/> */}
             </div>
         )

@@ -11,8 +11,9 @@ let HomeHeader = props=>{
             <div>
             <div className="search">
                     <a href="javascript:;">
-                        <i className="iconfont icon-iconset0157"></i>
+                        
                         搜索商品或商家
+                        <i className="iconfont icon-iconset0157"></i>
                     </a>
             </div> 
             </div>

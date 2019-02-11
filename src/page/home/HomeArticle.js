@@ -15,9 +15,9 @@ class HomeArticle extends Component {
         return (
             <div className="home-article">
                 <div className="art-box">
-                    <a href="javascript:;">
+                    {/* <a href="javascript:;">
                         <img src={require("./img/icon_toutiao.png")}/>
-                    </a>
+                    </a> */}
                     <div>
                         <Carousel className="art-carousel"
                             vertical

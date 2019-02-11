@@ -7,39 +7,43 @@ class HomeNav extends Component{
             iconNavTabs:[
                 {
                     iconPic:require('./img/icon_nav1.png'),
-                    name:'床品套件'
+                    name:'看视频'
                 },
                 {
                     iconPic:require('./img/icon_nav2.png'),
-                    name:'被子被芯'
+                    name:'热销榜'
                 },
                 {
                     iconPic:require('./img/icon_nav3.png'),
-                    name:'枕头枕芯'
+                    name:'爆款团购'
                 },
                 {
                     iconPic:require('./img/icon_nav4.png'),
-                    name:'床垫褥子'
+                    name:'SMG商城'
                 },
                 {
                     iconPic:require('./img/icon_nav5.png'),
-                    name:'面料商城'
+                    name:'我的OCJ'
                 },
                 {
                     iconPic:require('./img/icon_nav6.png'),
-                    name:'毛毯毯子'
+                    name:'鲜东方'
                 },
                 {
                     iconPic:require('./img/icon_nav7.png'),
-                    name:'夏凉用品'
+                    name:'赚新品'
                 },
                 {
                     iconPic:require('./img/icon_nav8.png'),
-                    name:'家具布艺'
+                    name:'拼团'
                 },
                 {
-                    iconPic:require('./img/icon_nav9.jpg'),
-                    name:'高阳毛巾'
+                    iconPic:require('./img/icon_nav9.png'),
+                    name:'全球购'
+                },
+                {
+                    iconPic:require('./img/icon_nav10.png'),
+                    name:'购物车'
                 },
             ],
         }

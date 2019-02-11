@@ -4,7 +4,22 @@
     display:flex;
     justify-content:space-between;
     background-color: #F12E24;
-    
+    .search{
+        height: 25px;
+        width: 177px;
+        float: left;
+        background-color: #d42e2c;
+        border: 1px solid #d42e2c;
+        padding-left: 10px;
+            a{
+                display: block;
+                color:#fff;
+                margin-top: 2px; 
+                i{
+                    margin-left: 50px; 
+                }
+            }
+    }
     &>div{
         flex:1;
         padding:10px 13px;
@@ -29,7 +44,7 @@
         }
         .active{
             color:#000;
-            border-bottom:2px solid #ff2d51;
+            border-bottom:2px solid #F12E24;
         }
     }
 }
