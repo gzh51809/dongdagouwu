@@ -32,7 +32,7 @@ class Finder extends Component{
             // 请求到的数据
             // console.log(res.data);
 
-            //轮播图
+            //全部团购
             var ban2 = res[0].setList[0].contentList;
             
             console.log(ban2);
@@ -57,7 +57,7 @@ class Finder extends Component{
             // 请求到的数据
             // console.log(res.data);
 
-            //轮播图
+            //新团购
             var ban1 = res.setList[0].contentList;
             
             console.log(ban1);
@@ -148,15 +148,15 @@ class Finder extends Component{
                                 <div className="top">
                                     <img src={item.item_image} alt={item.item_image} />
                                     <div className="zhekou">
-                                        <span>8</span>折
+                                        <span>{item.co_dc}折</span>
                                         <p>团&nbsp;&nbsp;购</p>
                                     </div>
                                 </div>
                                 <div className="but">
                                     <div className="jieshao">
-                                    【电视团购】却老斋 破壁灵芝孢子粉优惠装0.99g/袋*（100*3+50）
+                                    {item.item_name}
                                     </div>
-                                    <div className="jiage">￥1,165</div>
+                                    <div className="jiage">￥{item.last_sale_price}</div>
                                 </div>
                             </div>
                             })
