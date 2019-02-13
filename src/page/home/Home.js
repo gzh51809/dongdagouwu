@@ -1,12 +1,10 @@
 import React,{Component} from 'react';
 import {Route,Switch,Redirect} from 'react-router-dom';
 import '@/sass/home.scss';
-
+import { Drawer, List, NavBar, Icon } from 'antd-mobile';
 import BottomBar from '@com/BottomBar';
 import HomeHeader from '@com/HomeHeader';
 import HomeBanner from './HomeBanner';
-import HomeFind from './HomeFind';
-import HomeFocus from './HomeFocus';
 import HomeNav from './HomeNav'
 
 class Home extends Component{
@@ -17,6 +15,7 @@ class Home extends Component{
             data1:[],
             //商品展示
             data2:[],
+            open: true,
 
         }
     }
@@ -52,6 +51,10 @@ class Home extends Component{
             // 打印输出
             // console.log(this.state.arr)
         })
+        let Change = (...args) => {
+            console.log(args);
+            this.setState({ open: !this.state.open });
+          }
 
 
     }
@@ -64,6 +67,7 @@ class Home extends Component{
                 </footer>
                    
                 <div className="main">
+                
                     <HomeBanner/>
                     <HomeNav/>
                         {

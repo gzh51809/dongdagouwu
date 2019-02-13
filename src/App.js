@@ -7,7 +7,8 @@ import Factory from '@/page/factory/Factory';
 import Finder from '@/page/finder/Finder';
 import Cart from '@/page/cart/Cart';
 import Mine from '@/page/mine/Mine';
-import Guang from '@/page/guangwan/guang'
+import Guang from '@/page/guangwan/guang';
+import Fenlei from '@/page/fenlei/fenlei';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/cart" component={Cart} />
           <Route path="/mine" component={Mine} />
           <Route path="/guang" component={Guang} />
+          <Route path="/fenlei" component={Fenlei} />
           <Redirect from="/" to="/home" exact/>
         </Switch>
       </div>
