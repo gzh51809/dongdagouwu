@@ -10,6 +10,7 @@
         // background-color: #eeeeee;
         ul{
             display: block;
+            
             li{
                 display: block;
                 width: 80px;
@@ -20,6 +21,12 @@
                 font-size: 16px;
                 background: #fff;
                 border-bottom: #c8c8c8 1px solid;
+                
+            }
+            .dianji{
+                padding-right: 3px;
+                border-left: #f12e24 3px solid;
+                background-color: #eeeeee;
             }
         }
     }
@@ -54,6 +61,7 @@
         .nav{
             display: flex;
             flex-wrap: wrap;
+            
             li{
                 float: left;
                 width: 85px;

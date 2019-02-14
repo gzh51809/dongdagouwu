@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import BottomBar from '@com/BottomBar';
 import HomeHeader from '@com/HomeHeader';
-import '@/sass/fenlei.scss'
+import '@/sass/fenlei.scss';
+import {Link} from 'react-router-dom';
 
 class fenlei extends Component{
     constructor(){
@@ -14,7 +15,8 @@ class fenlei extends Component{
             //商品展示
             data3:[],
             //按需加载商品展示
-            data4: 5721
+            data4: 5721,
+            data5: 'dianji'
             
 
         }
@@ -139,7 +141,7 @@ class fenlei extends Component{
                             <ul>
                                 {
                                 this.state.data1.map(item=>{
-                                    return <li className={item.code_mgroup} onClick={this.change.bind(this,item.code_mgroup)}>{item.code_name}</li>
+                                    return <li className={item.code_mgroup} onClick={this.change.bind(this,item.code_mgroup)} >{item.code_name}</li>
                                 })
                                 
                             }
@@ -164,17 +166,17 @@ class fenlei extends Component{
                                                     item.categoryList.map(item=>{
                                                         return <li>
                                                         <div>
+                                                        <Link to="/liebiao">
                                                             <img src={item.s_icon} alt={item.s_icon} />
                                                             <p>{item.shop_nm_3}</p>
+                                                         </Link>   
                                                         </div>
                                                     </li>
                                                     })
-                                                }
-                                                
+                                                }   
                                             </ul>
                                             </div>
-                                        })
-                                        
+                                        })    
                                     }
 
                             </div>

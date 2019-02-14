@@ -9,6 +9,7 @@ import Cart from '@/page/cart/Cart';
 import Mine from '@/page/mine/Mine';
 import Guang from '@/page/guangwan/guang';
 import Fenlei from '@/page/fenlei/fenlei';
+import Liebiao from '@/page/liebiao/liebiao';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/mine" component={Mine} />
           <Route path="/guang" component={Guang} />
           <Route path="/fenlei" component={Fenlei} />
+          <Route path="/liebiao" component={Liebiao}/>
           <Redirect from="/" to="/home" exact/>
         </Switch>
       </div>
