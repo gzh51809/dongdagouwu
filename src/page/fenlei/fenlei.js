@@ -63,8 +63,8 @@ class fenlei extends Component{
     
     componentDidMount(){
         //请求数据的网址
-        var url = "http://m.ocj.com.cn/mt/leftnav"
-        var url2 = `http://m.ocj.com.cn/mt/navcategorynew/${this.state.data4}`;
+        var url = "https://m.ocj.com.cn/mt/leftnav"
+        var url2 = `https://m.ocj.com.cn/mt/navcategorynew/${this.state.data4}`;
         var option = {
             //请求类型
             methods:"get"

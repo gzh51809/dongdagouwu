@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import BottomBar from '@com/BottomBar';
 import HomeHeader from '@com/HomeHeader';
 import '@/sass/liebiao.scss';
-import {Link} from 'react-router-dom';
+
 class liebiao extends Component{
     constructor(){
         super();
@@ -45,41 +45,50 @@ class liebiao extends Component{
         return (
             <div className="page cart">
                    
-                   <HomeHeader/>
-                    <footer>
-                    <BottomBar/>
-                </footer>
-                <div className="lsit">
-                        <ul>
-                            <li>最新</li>
-                            <li>销量</li>
-                            <li>价格</li>
-                            <li>评论</li>
-                        </ul>
+                <div className="top">
+                    <div className="fanhui">返回</div>
+                    <div className="biaoti">商品详情</div>
+                    <div className="fenxiang">分享</div>
                 </div>
+               
                 <div className="main">
                    
                     <div className="nav">
-                        <ul>
+                        {/* <ul>
                         {
                                 this.state.data.map(item=>{
-                                    return  <Link to="/xiangqin">
-                                    <li>
+                                    return  <li>
                                     <img src={item.url} alt={item.url} />
                                     <p>{item.jieshao}</p>
                                     <span>￥{item.jiage}</span>
                                 </li>
-                                </Link>
                                 })
                                 
                             }
                            
                             
-                        </ul>
+                        </ul> */}
+                        {/* 图片详情 */}
+                        <div className="img">tupian</div>
+                        {/* 产品说明 */}
+                        <div className="shuomin"></div>
+                        {/* 规格选择 */}
+                        <div className="guige"></div>
+
                     </div>
                 </div>
-                
+               
+                <div className="button">
+                    <ul>
+                        <li>客服</li>
+                        <li>收藏</li>
+                    </ul>
+                    <span>加入购物车</span>
+                    <p>立即购买</p>
+                </div>
+               
             </div>
+            
             
         )
     }

@@ -67,7 +67,7 @@ class BottomBar extends Component {
                 barTintColor="white"
                 prerenderingSiblingsNumber={0}
                 noRenderContent
-                font-size='14px'
+                    
             >
                 {
                     this.state.tabs.map(item=>{

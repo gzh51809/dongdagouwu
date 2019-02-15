@@ -10,6 +10,7 @@ import Mine from '@/page/mine/Mine';
 import Guang from '@/page/guangwan/guang';
 import Fenlei from '@/page/fenlei/fenlei';
 import Liebiao from '@/page/liebiao/liebiao';
+import Xiangqin from '@/page/xiangqin/xiangqin';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path="/guang" component={Guang} />
           <Route path="/fenlei" component={Fenlei} />
           <Route path="/liebiao" component={Liebiao}/>
+          <Route path="/xiangqin" component={Xiangqin}/>
           <Redirect from="/" to="/home" exact/>
         </Switch>
       </div>
