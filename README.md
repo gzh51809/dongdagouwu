@@ -1,5 +1,7 @@
 # 东方购物
 > 东方购物app，基于react + antd-ui  + js 
+>
+> 项目演示地址： http://localhost:3000
 
 ### 项目工具
 
