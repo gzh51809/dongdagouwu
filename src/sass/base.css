@@ -11,7 +11,7 @@ table { border-collapse:collapse; }
 a {text-decoration:none; 
     color: #000;}
 
-
+    * { touch-action: pan-y; } 
 
 /*2.添加公共样式*/
 /*body {
